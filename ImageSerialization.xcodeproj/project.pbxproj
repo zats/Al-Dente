@@ -16,22 +16,11 @@
 		5C8DC4B8182E90BB0073E195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DC4B6182E90BB0073E195 /* Main.storyboard */; };
 		5C8DC4BB182E90BB0073E195 /* ZIOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DC4BA182E90BB0073E195 /* ZIOViewController.m */; };
 		5C8DC4BD182E90BB0073E195 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DC4BC182E90BB0073E195 /* Images.xcassets */; };
-		5C8DC4C4182E90BB0073E195 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8DC4C3182E90BB0073E195 /* XCTest.framework */; };
-		5C8DC4C5182E90BB0073E195 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8DC4A4182E90BB0073E195 /* Foundation.framework */; };
-		5C8DC4C6182E90BB0073E195 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8DC4A8182E90BB0073E195 /* UIKit.framework */; };
-		5C8DC4CE182E90BB0073E195 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DC4CC182E90BB0073E195 /* InfoPlist.strings */; };
-		5C8DC4D0182E90BB0073E195 /* ImageSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DC4CF182E90BB0073E195 /* ImageSerializationTests.m */; };
+		5C8DC4E6182EB05B0073E195 /* UIImage+AlDente.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DC4E5182EB05B0073E195 /* UIImage+AlDente.m */; };
+		5C8DC4E9182EB0CB0073E195 /* Abstract.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DC4E7182EB0CB0073E195 /* Abstract.jpg */; };
+		5C8DC4EA182EB0CB0073E195 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DC4E8182EB0CB0073E195 /* image.jpg */; };
+		5C8DC4EE182EBC650073E195 /* AppStore.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C8DC4ED182EBC650073E195 /* AppStore.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5C8DC4C7182E90BB0073E195 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5C8DC499182E90BB0073E195 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5C8DC4A0182E90BB0073E195;
-			remoteInfo = ImageSerialization;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5C8DC4A1182E90BB0073E195 /* ImageSerialization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageSerialization.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,11 +37,12 @@
 		5C8DC4B9182E90BB0073E195 /* ZIOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZIOViewController.h; sourceTree = "<group>"; };
 		5C8DC4BA182E90BB0073E195 /* ZIOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZIOViewController.m; sourceTree = "<group>"; };
 		5C8DC4BC182E90BB0073E195 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5C8DC4C2182E90BB0073E195 /* ImageSerializationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageSerializationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8DC4C3182E90BB0073E195 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		5C8DC4CB182E90BB0073E195 /* ImageSerializationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImageSerializationTests-Info.plist"; sourceTree = "<group>"; };
-		5C8DC4CD182E90BB0073E195 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5C8DC4CF182E90BB0073E195 /* ImageSerializationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageSerializationTests.m; sourceTree = "<group>"; };
+		5C8DC4E4182EB05B0073E195 /* UIImage+AlDente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AlDente.h"; sourceTree = "<group>"; };
+		5C8DC4E5182EB05B0073E195 /* UIImage+AlDente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AlDente.m"; sourceTree = "<group>"; };
+		5C8DC4E7182EB0CB0073E195 /* Abstract.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Abstract.jpg; sourceTree = "<group>"; };
+		5C8DC4E8182EB0CB0073E195 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		5C8DC4ED182EBC650073E195 /* AppStore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppStore.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,24 +56,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C8DC4BF182E90BB0073E195 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C8DC4C4182E90BB0073E195 /* XCTest.framework in Frameworks */,
-				5C8DC4C6182E90BB0073E195 /* UIKit.framework in Frameworks */,
-				5C8DC4C5182E90BB0073E195 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5C8DC498182E90BB0073E195 = {
 			isa = PBXGroup;
 			children = (
+				5C8DC4E3182EB05B0073E195 /* AlDente */,
 				5C8DC4AA182E90BB0073E195 /* ImageSerialization */,
-				5C8DC4C9182E90BB0073E195 /* ImageSerializationTests */,
 				5C8DC4A3182E90BB0073E195 /* Frameworks */,
 				5C8DC4A2182E90BB0073E195 /* Products */,
 			);
@@ -93,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				5C8DC4A1182E90BB0073E195 /* ImageSerialization.app */,
-				5C8DC4C2182E90BB0073E195 /* ImageSerializationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,13 +91,16 @@
 		5C8DC4AA182E90BB0073E195 /* ImageSerialization */ = {
 			isa = PBXGroup;
 			children = (
+				5C8DC4E7182EB0CB0073E195 /* Abstract.jpg */,
+				5C8DC4E8182EB0CB0073E195 /* image.jpg */,
+				5C8DC4ED182EBC650073E195 /* AppStore.png */,
+				5C8DC4B6182E90BB0073E195 /* Main.storyboard */,
 				5C8DC4B3182E90BB0073E195 /* ZIOAppDelegate.h */,
 				5C8DC4B4182E90BB0073E195 /* ZIOAppDelegate.m */,
-				5C8DC4B6182E90BB0073E195 /* Main.storyboard */,
 				5C8DC4B9182E90BB0073E195 /* ZIOViewController.h */,
 				5C8DC4BA182E90BB0073E195 /* ZIOViewController.m */,
-				5C8DC4BC182E90BB0073E195 /* Images.xcassets */,
 				5C8DC4AB182E90BB0073E195 /* Supporting Files */,
+				5C8DC4BC182E90BB0073E195 /* Images.xcassets */,
 			);
 			path = ImageSerialization;
 			sourceTree = "<group>";
@@ -134,23 +116,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5C8DC4C9182E90BB0073E195 /* ImageSerializationTests */ = {
+		5C8DC4E3182EB05B0073E195 /* AlDente */ = {
 			isa = PBXGroup;
 			children = (
-				5C8DC4CF182E90BB0073E195 /* ImageSerializationTests.m */,
-				5C8DC4CA182E90BB0073E195 /* Supporting Files */,
+				5C8DC4E4182EB05B0073E195 /* UIImage+AlDente.h */,
+				5C8DC4E5182EB05B0073E195 /* UIImage+AlDente.m */,
 			);
-			path = ImageSerializationTests;
-			sourceTree = "<group>";
-		};
-		5C8DC4CA182E90BB0073E195 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5C8DC4CB182E90BB0073E195 /* ImageSerializationTests-Info.plist */,
-				5C8DC4CC182E90BB0073E195 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
+			path = AlDente;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -172,24 +145,6 @@
 			productReference = 5C8DC4A1182E90BB0073E195 /* ImageSerialization.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5C8DC4C1182E90BB0073E195 /* ImageSerializationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5C8DC4D6182E90BB0073E195 /* Build configuration list for PBXNativeTarget "ImageSerializationTests" */;
-			buildPhases = (
-				5C8DC4BE182E90BB0073E195 /* Sources */,
-				5C8DC4BF182E90BB0073E195 /* Frameworks */,
-				5C8DC4C0182E90BB0073E195 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5C8DC4C8182E90BB0073E195 /* PBXTargetDependency */,
-			);
-			name = ImageSerializationTests;
-			productName = ImageSerializationTests;
-			productReference = 5C8DC4C2182E90BB0073E195 /* ImageSerializationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,11 +154,6 @@
 				CLASSPREFIX = ZIO;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Spot.IM;
-				TargetAttributes = {
-					5C8DC4C1182E90BB0073E195 = {
-						TestTargetID = 5C8DC4A0182E90BB0073E195;
-					};
-				};
 			};
 			buildConfigurationList = 5C8DC49C182E90BB0073E195 /* Build configuration list for PBXProject "ImageSerialization" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -219,7 +169,6 @@
 			projectRoot = "";
 			targets = (
 				5C8DC4A0182E90BB0073E195 /* ImageSerialization */,
-				5C8DC4C1182E90BB0073E195 /* ImageSerializationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,14 +181,9 @@
 				5C8DC4BD182E90BB0073E195 /* Images.xcassets in Resources */,
 				5C8DC4AF182E90BB0073E195 /* InfoPlist.strings in Resources */,
 				5C8DC4B8182E90BB0073E195 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C8DC4C0182E90BB0073E195 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C8DC4CE182E90BB0073E195 /* InfoPlist.strings in Resources */,
+				5C8DC4E9182EB0CB0073E195 /* Abstract.jpg in Resources */,
+				5C8DC4EE182EBC650073E195 /* AppStore.png in Resources */,
+				5C8DC4EA182EB0CB0073E195 /* image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,29 +194,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8DC4E6182EB05B0073E195 /* UIImage+AlDente.m in Sources */,
 				5C8DC4B1182E90BB0073E195 /* main.m in Sources */,
 				5C8DC4BB182E90BB0073E195 /* ZIOViewController.m in Sources */,
 				5C8DC4B5182E90BB0073E195 /* ZIOAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C8DC4BE182E90BB0073E195 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C8DC4D0182E90BB0073E195 /* ImageSerializationTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5C8DC4C8182E90BB0073E195 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5C8DC4A0182E90BB0073E195 /* ImageSerialization */;
-			targetProxy = 5C8DC4C7182E90BB0073E195 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5C8DC4AD182E90BB0073E195 /* InfoPlist.strings */ = {
@@ -289,14 +218,6 @@
 				5C8DC4B7182E90BB0073E195 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5C8DC4CC182E90BB0073E195 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C8DC4CD182E90BB0073E195 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -400,48 +321,6 @@
 			};
 			name = Release;
 		};
-		5C8DC4D7182E90BB0073E195 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ImageSerialization.app/ImageSerialization";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ImageSerialization/ImageSerialization-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ImageSerializationTests/ImageSerializationTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		5C8DC4D8182E90BB0073E195 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ImageSerialization.app/ImageSerialization";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ImageSerialization/ImageSerialization-Prefix.pch";
-				INFOPLIST_FILE = "ImageSerializationTests/ImageSerializationTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -459,14 +338,6 @@
 			buildConfigurations = (
 				5C8DC4D4182E90BB0073E195 /* Debug */,
 				5C8DC4D5182E90BB0073E195 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		5C8DC4D6182E90BB0073E195 /* Build configuration list for PBXNativeTarget "ImageSerializationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5C8DC4D7182E90BB0073E195 /* Debug */,
-				5C8DC4D8182E90BB0073E195 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
