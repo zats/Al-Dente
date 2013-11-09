@@ -1,3 +1,5 @@
+# About
+
 Blazingly fast image (de)serialization, when speed is more important then memory and disk storage.
 
 What's in the box:
@@ -8,30 +10,91 @@ What's in the box:
 
 Basically it stores raw image data with some metadata that allows to restore the image when needed. Please refer to the following comparison table to figure out if this library is suitable for your purposes
 
-# Encoding time [^time]
+## Encoding time
 
-Image size | PNG | JPEG[^jpeg-quality] | RAW
- - | - | - | -
-100x100 | 0.535747 | 0.275100 | 0.060641
-500x432 | 14.350732 | 1.757291 | 0.643586
-5120x2880 | 1661.078830 | 159.876962 | 94.347669
+<table>
+<thead>
+<tr>
+<th>Image size </th>
+<th>PNG</th><th>JPEG</th><th>RAW</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100x100 </td>
+<td>0.535747</td><td>0.275100</td><td>0.060641</td>
+</tr>
+<tr>
+<td>500x432 </td>
+<td> 14.350732 </td><td> 1.757291 </td><td> 0.643586</td>
+</tr>
+<tr>
+<td>5120x2880 </td>
+<td> 1661.078830 </td><td> 159.876962 </td><td> 94.347669</td>
+</tr>
+</tbody>
+</table>
 
-# Decoding time
+## Decoding time
 
-Image size | PNG | JPEG | RAW 
- - | - | - | -
-100x100 | 0.057559 | 0.091868 | 0.060641
-500x432 | 0.088384 | 0.101668 | 0.004174
-5120x2880 | 0.098181 | 0.162210 | 0.004557
+<table>
+<thead>
+<tr>
+<th>Image size </th>
+<th> PNG </th>
+<th> JPEG </th>
+<th> RAW</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100x100 </td>
+<td> 0.057559 </td>
+<td> 0.091868 </td>
+<td> 0.060641</td>
+</tr>
+<tr>
+<td>500x432 </td>
+<td> 0.088384 </td>
+<td> 0.101668 </td>
+<td> 0.004174</td>
+</tr>
+<tr>
+<td>5120x2880 </td>
+<td> 0.098181 </td>
+<td> 0.162210 </td>
+<td> 0.004557</td>
+</tr>
+</tbody>
+</table>
 
-# File size [^file-size]
+## File size
 
-Image size | PNG | JPEG | RAW
-- | - | - | -
-100x100 | 5419 | 2777 | 40036
-500x432 | 318015 | 44583 | 684036
-5120x2880 | 36366039 | 4520381 | 58982436
+<table>
+<thead>
+<tr>
+<th>Image size </th>
+<th>PNG</th><th>JPEG</th><th>RAW</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100x100</td>
+<td>5419</td><td>2777</td><td>40036</td>
+</tr>
+<tr>
+<td>500x432</td>
+<td>318015</td><td>44583</td><td>684036</td>
+</tr>
+<tr>
+<td>5120x2880 </td>
+<td>36366039</td><td>4520381</td><td>58982436</td>
+</tr>
+</tbody>
+</table>
 
-[^jpeg-quality]: JPEG quality was set to `0.75`.
-[^time]: Encoding and decoding time is in milliseconds.
-[^file-size]: Data size in bytes.
+# Notes
+
+* JPEG quality was set to `0.75`.
+* Encoding and decoding time is in milliseconds.
+* Data size in bytes.
