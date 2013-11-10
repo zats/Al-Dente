@@ -8,9 +8,15 @@
 
 #import "UIImage+AlDente.h"
 
+static const NSUInteger AZSignature = 'zraw';
+
 NSData *UIImageRAWRepresentation(UIImage *image) {
 	CGImageRef cgImage = image.CGImage;
 	
+	NSMutableData *mutableData = [NSMutableData dataWithBytes:&AZSignature
+													   length:sizeof(AZSignature)];
+
+	// Basic image information
 	size_t bitsPerPixel = CGImageGetBitsPerPixel(cgImage);
 	size_t bitsPerComponent = CGImageGetBitsPerComponent(cgImage);
 	size_t width = CGImageGetWidth(cgImage);
@@ -18,10 +24,6 @@ NSData *UIImageRAWRepresentation(UIImage *image) {
 	size_t bytesPerRow = CGImageGetBytesPerRow(cgImage);
 	CGColorSpaceRef colorSpace = CGImageGetColorSpace(cgImage);
 	CGBitmapInfo bitmapInfo = CGImageGetBitmapInfo(cgImage);
-	
-	NSMutableData *mutableData = [NSMutableData data];
-	
-	// Basic image information
 	[mutableData appendBytes:&bitsPerPixel length:sizeof(bitsPerPixel)];
 	[mutableData appendBytes:&bitsPerComponent length:sizeof(bitsPerComponent)];
 	[mutableData appendBytes:&bytesPerRow length:sizeof(bytesPerRow)];
@@ -48,44 +50,49 @@ NSData *UIImageRAWRepresentation(UIImage *image) {
 @implementation UIImage (AlDente)
 
 + (UIImage *)az_imageWithRawData:(NSData *)data {
-	size_t bitsPerPixel = 0;
-	size_t bitsPerComponent = 0;
-	size_t width = 0;
-	size_t height = 0;
-	size_t bytesPerRow = 0;
-	CGColorSpaceRef colorSpace = 0;
-	CGBitmapInfo bitmapInfo = 0;
-	CGFloat imageScale = 0;
-	UIImageOrientation imageOrientation = 0;
+	NSUInteger signature = 0;
+	[data getBytes:&signature range:NSMakeRange(0, sizeof(signature))];
+	if (signature != AZSignature){
+		return nil;
+	}
 
-	NSUInteger offset = 0;
+	NSUInteger offset = 4;
+
+	size_t bitsPerPixel = 0;
 	[data getBytes:&bitsPerPixel range:NSMakeRange(offset, sizeof(bitsPerPixel))];
 	offset += sizeof(bitsPerPixel);
 	
+	size_t bitsPerComponent = 0;
 	[data getBytes:&bitsPerComponent range:NSMakeRange(offset, sizeof(bitsPerComponent))];
 	offset += sizeof(bitsPerComponent);
 	
+	size_t bytesPerRow = 0;
 	[data getBytes:&bytesPerRow range:NSMakeRange(offset, sizeof(bytesPerRow))];
 	offset += sizeof(bytesPerRow);
 	
+	size_t width = 0;
 	[data getBytes:&width range:NSMakeRange(offset, sizeof(width))];
 	offset += sizeof(width);
 	
+	size_t height = 0;
 	[data getBytes:&height range:NSMakeRange(offset, sizeof(height))];
 	offset += sizeof(height);
 	
+	CGColorSpaceRef colorSpace = 0;
 	[data getBytes:&colorSpace range:NSMakeRange(offset, sizeof(colorSpace))];
 	offset += sizeof(colorSpace);
 	
+	CGBitmapInfo bitmapInfo = 0;
 	[data getBytes:&bitmapInfo range:NSMakeRange(offset, sizeof(bitmapInfo))];
 	offset += sizeof(bitmapInfo);
 	
+	CGFloat imageScale = 0;
 	[data getBytes:&imageScale range:NSMakeRange(offset, sizeof(imageScale))];
 	offset += sizeof(imageScale);
 	
+	UIImageOrientation imageOrientation = 0;
 	[data getBytes:&imageOrientation range:NSMakeRange(offset, sizeof(imageOrientation))];
 	offset += sizeof(imageOrientation);
-	
 	
 	data = [data subdataWithRange:NSMakeRange(offset, [data length] - offset)];
 	CGDataProviderRef provider = CGDataProviderCreateWithCFData((__bridge CFDataRef)data);
